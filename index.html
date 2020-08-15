@@ -1,53 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment Solution for Module 2</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Module 3 Non-Optional Solution</title>
 </head>
 <body>
-    <h1>Our Menu</h1>
-    <div class="row">
-        <section class="col-lg-1 col-md-1 col-sm-1 col-tiny-1">
-            <h1 id="chicken-title">Chicken</h1>
-            <div class="padded">
-                <div>This is a menu for chickens, here are some items chicken eat: </div>
-                <ul>
-                    <li>Seeds</li>
-                    <li>Seeds</li>
-                    <li>Bugs</li>
-                    <li>Worms? Honestly I don't keep chickens so I wouldn't know.</li>
-                </ul>
-                <div>After the list, so you can observe the padding correctly.</div>
+
+    <header id="headerID">
+        <nav class="navbar navbar-dark">
+            <div class="navbar-brand padded">
+                <h1>Food, LLC</h1>
             </div>
-        </section>
-        <section class="col-lg-1 col-md-1 col-sm-1 col-tiny-1">
-            <h1 id="beef-title">Beef</h1>
+
             <div class="padded">
-                <div>In contrast, this is a beef menu, a "large" spread of options: </div>
-                <ul>
-                    <li>Roast Beef</li>
-                    <li>Fried beef strips in garlic</li>
-                    <li>Running out of ideas...</li>
-                    <li>I've never eaten sushi before so I don't know what I'll do for that list.</li>
+                <button class="navbar-toggler visible-xs" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div> 
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link text-center" href="#">Chicken</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link text-center" href="#">Beef</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link text-center" href="#">Sushi</a>
+                    </li>
                 </ul>
-                <div>After the list, so you can observe the padding correctly.</div>
             </div>
-        </section>
-        <section class="col-lg-1 col-md-2 col-sm-1 col-tiny-1">
-            <h1 id="sushi-title">Sushi</h1>
-            <div class="padded">
-                <div>This is a sushi menu, all of the options have been ripped from google</div>
-                <ul>
-                    <li>Nigiri</li>
-                    <li>Sashimi</li>
-                    <li>Maki</li>
-                    <li>Uramaki</li>
-                </ul>
-                <div>After the list, so you can observe the padding correctly.</div>
+        </nav>
+    </header> <!-- end of header -->
+
+    <section id="mainText">
+        <div id="title2" class="text-center">
+            <h2>Our Menu</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div id="mainBody" class="row">
+                <div class="col-md-12 text-center">
+                    <h3>JabberWocky</h3>
+                    <div>A poem by Lewis Carrol<br><br></div>
+
+                    Twas brillig, and the slithy toves<br>
+                     Did gyre and gimble in the wabe:<br>
+               All mimsy were the borogoves,<br>
+                    And the mome raths outgrabe.<br>
+                    <br>
+              “Beware the Jabberwock, my son!<br>
+                    The jaws that bite, the claws that catch!<br>
+              Beware the Jubjub bird, and shun<br>
+                    The frumious Bandersnatch!”<br>
+                    <br>
+              He took his vorpal sword in hand;<br>
+                    Long time the manxome foe he sought—<br>
+              So rested he by the Tumtum tree<br>
+                    And stood awhile in thought.<br>
+                    <br>
+              And, as in uffish thought he stood,<br>
+                    The Jabberwock, with eyes of flame,<br>
+              Came whiffling through the tulgey wood,<br>
+                    And burbled as it came!<br>
+                    <br>
+              One, two! One, two! And through and through<br>
+                    The vorpal blade went snicker-snack!<br>
+              He left it dead, and with its head<br>
+                    He went galumphing back.<br>
+                    <br>
+              “And hast thou slain the Jabberwock?<br>
+                    Come to my arms, my beamish boy!<br>
+              O frabjous day! Callooh! Callay!”<br>
+                    He chortled in his joy.<br>
+                    <br>
+              ’Twas brillig, and the slithy toves<br>
+                    Did gyre and gimble in the wabe:<br>
+              All mimsy were the borogoves,<br>
+                    And the mome raths outgrabe.<br>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
 </body>
 </html>
